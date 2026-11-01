@@ -205,12 +205,11 @@ div.stButton > button {
 st.markdown("""
 <div class="hero">
 
-    <h1>🎬 CineMatch</h1>
+    🎬 CineMatch
 
-    <p>
     Discover your next favourite movie —
     recommendations based on what you enjoy.
-    </p>
+    
 
 </div>
 """, unsafe_allow_html=True)
