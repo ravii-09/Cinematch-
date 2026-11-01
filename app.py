@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import requests
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
@@ -14,6 +15,54 @@ def load_movies():
     return data
 
 movies = load_movies()
+@st.cache_data(ttl=86400)
+def get_movie_poster(title, year):
+
+    # Read the secret token from Streamlit
+    try:
+        token = st.secrets["TMDB_READ_ACCESS_TOKEN"]
+    except (KeyError, FileNotFoundError):
+        return None
+
+    url = "https://api.themoviedb.org/3/search/movie"
+
+    headers = {
+        "Authorization": f"Bearer {token}",
+        "accept": "application/json"
+    }
+
+    params = {
+        "query": title,
+        "year": int(year),
+        "include_adult": False
+    }
+
+    try:
+        response = requests.get(
+            url,
+            headers=headers,
+            params=params,
+            timeout=10
+        )
+
+        response.raise_for_status()
+
+        data = response.json()
+        results = data.get("results", [])
+
+        if results:
+            poster_path = results[0].get("poster_path")
+
+            if poster_path:
+                return (
+                    "https://image.tmdb.org/t/p/w500"
+                    + poster_path
+                )
+
+        return None
+
+    except requests.RequestException:
+        return None
 
 @st.cache_resource
 def build_recommender(data):
@@ -27,7 +76,7 @@ def build_recommender(data):
     vectorizer = TfidfVectorizer(stop_words="english")
     matrix = vectorizer.fit_transform(data["combined_features"])
     similarity = cosine_similarity(matrix, matrix)
-    return similarity
+    return similarityim
 
 similarity = build_recommender(movies)
 
@@ -53,15 +102,41 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 def movie_card(movie):
-    genres = movie["genres"].replace("|", " • ")
-    st.markdown(
-        f'<div class="movie-card"><div style="font-size:28px">🎞️</div>'
-        f'<h4>{movie["title"]} ({int(movie["year"])})</h4>'
-        f'<div class="small-muted">⭐ {movie["rating"]}/10</div>'
-        f'<p class="small-muted">{genres}</p>'
-        f'<p>{movie["overview"]}</p></div>',
-        unsafe_allow_html=True
+    def movie_card(movie):
+
+    st.markdown(f"### {movie['title']}")
+
+    # Fetch the movie poster
+    poster_url = get_movie_poster(
+        movie["title"],
+        movie["year"]
     )
+
+    # Display the poster
+    if poster_url:
+        st.image(
+            poster_url,
+            use_container_width=True
+        )
+    else:
+        st.info("Poster not available")
+
+    # Display movie information
+    st.write("Release Year:", int(movie["year"]))
+
+    st.write(
+        "⭐ Rating:",
+        movie["rating"],
+        "/10"
+    )
+
+    st.write(
+        "Genre:",
+        movie["genres"].replace("|", ", ")
+    )
+
+    st.write("Description:")
+    st.write(movie["overview"])
 
 def recommend_by_title(title, count=5):
     index = movies.index[movies["title"] == title][0]
