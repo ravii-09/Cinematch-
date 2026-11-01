@@ -1,0 +1,31 @@
+movie_id,title,year,genres,rating,director,cast,overview,keywords
+1,The Dark Knight,2008,Action|Crime|Drama,9.0,Christopher Nolan,Christian Bale|Heath Ledger,A masked hero fights crime and a chaotic villain threatens Gotham City.,Batman|Joker|superhero|crime|gotham
+2,Batman Begins,2005,Action|Crime|Drama,8.2,Christopher Nolan,Christian Bale|Michael Caine,A young man trains to become a masked protector and defend his city.,Batman|origin|superhero|crime|gotham
+3,The Dark Knight Rises,2012,Action|Crime|Drama,8.4,Christopher Nolan,Christian Bale|Tom Hardy,A retired hero returns to protect his city from a powerful enemy.,Batman|superhero|crime|gotham
+4,Inception,2010,Action|Adventure|Sci-Fi,8.8,Christopher Nolan,Leonardo DiCaprio|Joseph Gordon-Levitt,A skilled thief enters people's dreams to steal and plant ideas.,dreams|heist|science fiction|mind bending
+5,Interstellar,2014,Adventure|Drama|Sci-Fi,8.7,Christopher Nolan,Matthew McConaughey|Anne Hathaway,Explorers travel through space searching for a future home for humanity.,space|astronaut|time|science fiction
+6,The Matrix,1999,Action|Sci-Fi,8.7,Lana Wachowski,Keanu Reeves|Carrie-Anne Moss,A computer hacker discovers that reality is a simulated world.,virtual reality|technology|action|future
+7,Iron Man,2008,Action|Adventure|Sci-Fi,7.9,Jon Favreau,Robert Downey Jr.|Gwyneth Paltrow,An inventor builds a powerful suit and becomes a superhero.,marvel|technology|superhero|robot
+8,Avengers: Endgame,2019,Action|Adventure|Drama,8.4,Anthony Russo,Robert Downey Jr.|Chris Evans,A team of superheroes joins forces to restore balance after a major loss.,marvel|superhero|team|time travel
+9,Spider-Man: Into the Spider-Verse,2018,Animation|Action|Adventure,8.4,Bob Persichetti,Shameik Moore|Jake Johnson,A teenager discovers his powers and meets heroes from other dimensions.,spider man|superhero|animation|multiverse
+10,Guardians of the Galaxy,2014,Action|Adventure|Comedy,8.0,James Gunn,Chris Pratt|Zoe Saldana,A group of unlikely heroes protects the galaxy with humour and teamwork.,space|marvel|team|comedy
+11,The Hangover,2009,Comedy,7.7,Todd Phillips,Bradley Cooper|Zach Galifianakis,Friends try to piece together a wild night before a wedding.,friends|party|comedy
+12,3 Idiots,2009,Comedy|Drama,8.4,Rajkumar Hirani,Aamir Khan|R. Madhavan,Three engineering students learn about friendship and following their passion.,college|friendship|education|comedy
+13,PK,2014,Comedy|Drama|Sci-Fi,8.1,Rajkumar Hirani,Aamir Khan|Anushka Sharma,An unusual visitor questions society's beliefs while searching for answers.,alien|society|comedy|science fiction
+14,Zindagi Na Milegi Dobara,2011,Adventure|Comedy|Drama,8.2,Zoya Akhtar,Hrithik Roshan|Farhan Akhtar,Three friends take a road trip that changes how they see life.,friendship|travel|adventure|comedy
+15,The Pursuit of Happyness,2006,Biography|Drama,8.0,Gabriele Muccino,Will Smith|Jaden Smith,A father faces difficult circumstances while working toward a better future.,inspiration|family|dreams|struggle
+16,Forrest Gump,1994,Drama|Romance,8.8,Robert Zemeckis,Tom Hanks|Robin Wright,A kind-hearted man experiences important moments in American history.,life|friendship|inspiration|romance
+17,The Shawshank Redemption,1994,Drama,9.3,Frank Darabont,Tim Robbins|Morgan Freeman,Two prisoners form a friendship and hold on to hope over many years.,prison|friendship|hope|inspiration
+18,The Godfather,1972,Crime|Drama,9.2,Francis Ford Coppola,Marlon Brando|Al Pacino,The aging head of a crime family passes power to his son.,mafia|family|crime|classic
+19,Joker,2019,Crime|Drama|Thriller,8.4,Todd Phillips,Joaquin Phoenix|Robert De Niro,A lonely man struggles with society and gradually becomes a notorious figure.,psychological|crime|gotham|thriller
+20,Se7en,1995,Crime|Drama|Mystery,8.6,David Fincher,Brad Pitt|Morgan Freeman,Two detectives investigate a series of crimes inspired by the seven deadly sins.,detective|mystery|crime|thriller
+21,Gone Girl,2014,Drama|Mystery|Thriller,8.1,David Fincher,Ben Affleck|Rosamund Pike,A disappearance turns a marriage into a complicated mystery.,mystery|psychological|thriller
+22,The Conjuring,2013,Horror|Mystery|Thriller,7.5,James Wan,Vera Farmiga|Patrick Wilson,Investigators help a family facing unexplained events in an old farmhouse.,haunted|supernatural|horror
+23,A Quiet Place,2018,Drama|Horror|Sci-Fi,7.5,John Krasinski,Emily Blunt|John Krasinski,A family must live quietly to survive in a world threatened by creatures.,survival|family|monsters|science fiction
+24,Titanic,1997,Drama|Romance,7.9,James Cameron,Leonardo DiCaprio|Kate Winslet,Two young people from different backgrounds fall in love aboard a ship.,love|romance|ship|history
+25,The Notebook,2004,Drama|Romance,7.8,Nick Cassavetes,Ryan Gosling|Rachel McAdams,A lifelong love story is remembered through an old notebook.,love|romance|relationship
+26,La La Land,2016,Comedy|Drama|Music|Romance,8.0,Damien Chazelle,Ryan Gosling|Emma Stone,An aspiring actor and a jazz musician pursue their dreams in Los Angeles.,music|dreams|romance|dance
+27,Coco,2017,Animation|Adventure|Family,8.4,Lee Unkrich,Anthony Gonzalez|Gael Garcia Bernal,A young musician enters a colourful world while learning about family history.,music|family|animation|adventure
+28,Finding Nemo,2003,Animation|Adventure|Comedy,8.2,Andrew Stanton,Albert Brooks|Ellen DeGeneres,A clownfish crosses the ocean to find his missing son.,ocean|family|friendship|animation
+29,Toy Story,1995,Animation|Adventure|Comedy,8.3,John Lasseter,Tom Hanks|Tim Allen,Toys come to life and learn about friendship and teamwork.,toys|friendship|animation|adventure
+30,Jurassic Park,1993,Adventure|Sci-Fi|Thriller,8.2,Steven Spielberg,Sam Neill|Laura Dern,"Scientists create a theme park filled with dinosaurs, but things go wrong.",dinosaurs|science|adventure|thriller
