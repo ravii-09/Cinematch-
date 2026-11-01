@@ -102,7 +102,6 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 def movie_card(movie):
-    def movie_card(movie):
 
     st.markdown(f"### {movie['title']}")
 
